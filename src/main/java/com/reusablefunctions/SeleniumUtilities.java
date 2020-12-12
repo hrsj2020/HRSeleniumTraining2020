@@ -16,40 +16,49 @@ public class SeleniumUtilities {
 	By directory = By.id("menu_directory_viewDirectory");
 	By maintenance = By.id("menu_maintenance_purgeEmployee");
 	By buzz = By.id("menu_buzz_viewBuzz");
-	
-	public  SeleniumUtilities(WebDriver driver) {
-		this.driver=driver;		
+
+	public SeleniumUtilities(WebDriver driver) {
+		this.driver = driver;
 	}
-	
+
 	public WebElement findAdminmenu() {
 		return driver.findElement(admin);
 	}
+
 	public WebElement findPIM() {
 		return driver.findElement(pim);
 	}
+
 	public WebElement findTime() {
 		return driver.findElement(time);
 	}
+
 	public WebElement findRecruitment() {
-		return driver.findElement(recruitment);	
+		return driver.findElement(recruitment);
 	}
+
 	public WebElement findMyInfo() {
 		return driver.findElement(myinfo);
 	}
+
 	public WebElement findPerformance() {
 		return driver.findElement(performance);
 	}
+
 	public WebElement findDashBoard() {
 		return driver.findElement(dashboard);
 	}
+
 	public WebElement findDirectory() {
 		return driver.findElement(directory);
 	}
+
 	public WebElement findmaintenance() {
 		return driver.findElement(maintenance);
 	}
+
 	public WebElement findBuzz() {
 		return driver.findElement(buzz);
 	}
-	
-	}
+
+}
